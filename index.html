@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of neural network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div><label for="TAX">TAX:</label><input type="number" id="TAX" required></div>
+        <div><label for="LOT SQFT ">LOT SQFT :</label><input type="number" id="LOT SQFT " required></div>
+        <div><label for="YR BUILT">YR BUILT:</label><input type="number" id="YR BUILT" required></div>
+        <div><label for="GROSS AREA ">GROSS AREA :</label><input type="number" id="GROSS AREA " required></div>
+        <div><label for="LIVING AREA">LIVING AREA:</label><input type="number" id="LIVING AREA" required></div>
+        <div><label for="FLOORS ">FLOORS :</label><input type="number" id="FLOORS " required></div>
+        <div><label for="ROOMS">ROOMS:</label><input type="number" id="ROOMS" required></div>
+        <div><label for="BEDROOMS ">BEDROOMS :</label><input type="number" id="BEDROOMS " required></div>
+        <div><label for="FULL BATH">FULL BATH:</label><input type="number" id="FULL BATH" required></div>
+        <div><label for="HALF BATH">HALF BATH:</label><input type="number" id="HALF BATH" required></div>
+        <div><label for="KITCHEN">KITCHEN:</label><input type="number" id="KITCHEN" required></div>
+        <div><label for="FIREPLACE">FIREPLACE:</label><input type="number" id="FIREPLACE" required></div>
+        <button onclick="classify()">Predict</button>
+        <div id="result"></div>
+    
+        <h1>Model Structure:</h1>
+        <div class="model-structure">
+            <img src="results/Model Structure.png" alt="Model Structure">
+        </div>
+        <h1>Training Loss:</h1>
+        <div class="model-structure">
+            <img src="results/Loss_graph.png" alt="Model Structure">
+        </div>
+        <h1>Metrics:</h1>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Mean Absolute Percentage Error (MAPE)</td>
+                <td>5.08</td>
+            </tr>
+            <tr>
+                <td>Root Mean Square Error(RMSE)</td>
+                <td>0.32</td>
+            </tr>
+        </table>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
